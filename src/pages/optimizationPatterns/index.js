@@ -1,0 +1,1 @@
+export { OptimizationPattern1 } from "./optimzation-pattern1"

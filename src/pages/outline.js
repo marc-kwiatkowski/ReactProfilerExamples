@@ -1,15 +1,18 @@
 import { ButtonHeader, Header, SubHeader } from "../components"
+import { useNavigate } from "react-router-dom";
+
 export function Outline() {
+    const navigate = useNavigate();
     return (
       <div>
         <ButtonHeader prevPage={"/disclaimer"} nextPage={"/purpose"}/>
-        Marc make these links!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         <Header>Outline</Header>
-        <SubHeader>Purpose</SubHeader>
-        <SubHeader>Installation</SubHeader>
-        <SubHeader>React Profiler 101</SubHeader>
-        <SubHeader>The Hard Part</SubHeader>
-        <SubHeader>Optimization Patterns</SubHeader>
+        <SubHeader onClick={() => navigate("/purpose")}>Purpose</SubHeader>
+        <SubHeader onClick={() => navigate("/install")}>Installation</SubHeader>
+        <SubHeader onClick={() => navigate("/profiler101")}>React Profiler 101</SubHeader>
+        <SubHeader onClick={() => navigate("/issue")}>Issue with this website</SubHeader>
+        <SubHeader onClick={() => navigate("/optimizationPattern1")}>Optimization Patterns</SubHeader>
+        <SubHeader onClick={() => navigate("/contactMe")}>Contact me</SubHeader>
       </div>
     );
   }

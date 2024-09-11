@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { Landing, ContactMe, Install, Issue, Outline, Profiler101, Purpose, Disclaimer } from "./pages"
+import { Landing, ContactMe, Install, Issue, Outline, Profiler101, Purpose, Disclaimer, OptimizationPattern1 } from "./pages"
 import "./index.css"
 
 const router = createBrowserRouter([
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
     element: <Issue />,
   },
   {
-    path: "/optimizationPatterns",
-    element: <div>so much todo</div>,
+    path: "/optimizationPattern1",
+    element: <OptimizationPattern1 />,
   },
   {
     path: "/contactMe",
