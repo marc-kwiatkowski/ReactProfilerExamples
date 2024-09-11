@@ -23,7 +23,7 @@ export function OptimizationPattern1Solution() {
         <p>The solution is to use <Link url="https://react.dev/reference/react/useMemo" text="React.useMemo"/></p>
         <p>Similarly to useMemo, you should look into <Link url="https://react.dev/reference/react/useCallback" text="React.useCallback"/></p>
         <p>Whenever there is a state change or a parent rerender, your react component will get rerendered..</p>
-        <p>By putting a useMemo around the expensive component, it will only rerender when the dependency array has a change</p>
+        <p className="font-medium">By putting a useMemo around the expensive component, it will only rerender when the dependency array has a change</p>
         <p>Since we have an empty dependency array, that static component never gets rerendered</p>
         <br></br>
         <SubHeader>In case you were confused by the profiler</SubHeader>
