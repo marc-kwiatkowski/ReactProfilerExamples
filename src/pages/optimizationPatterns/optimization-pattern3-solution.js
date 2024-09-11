@@ -33,7 +33,7 @@ export function OptimizationPattern3Solution() {
     return (
       <div>
         <ButtonHeader prevPage="/optimizationPattern3" nextPage="/optimizationPattern4" />
-        <Header>Optimization Pattern 3</Header>
+        <Header>Pattern 3 Solution</Header>
         <p>There are cases where objects make sense, but I've seen them misused a lot in production code.</p>
         <p className="font-medium">If any attribute of that object changes, memo does a shallow check and will void anything that has it as a dependency.</p>
         <p>In this case we could've passed the count value directly, but most commonly I'll see an issue similar to this where data is being spread around and causing unneeded rerenders</p>

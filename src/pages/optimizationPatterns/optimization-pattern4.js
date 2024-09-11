@@ -7,7 +7,7 @@ const UnderlyingRenderComponent = (props) => {
   return <p>{`some hypothetical component displaying a lot of results: ${props?.text}`}</p>
 }
 const RenderWrapper = (props) => {
-  return <div className="h-10" key={props?.key}>
+  return <div className="h-10">
     <UnderlyingRenderComponent text={props?.text} />
   </div>
 }

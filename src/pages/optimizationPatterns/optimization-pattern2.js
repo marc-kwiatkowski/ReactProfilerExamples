@@ -16,7 +16,7 @@ export function OptimizationPattern2() {
       <div>
         <ButtonHeader prevPage="/moreDisclaimer" nextPage="/optimizationPattern2Solution" />
         <Header>Optimization Pattern 2</Header>
-        <p>Hint: Slow initial render</p>
+        <p>Profile initial render</p>
         <ComponentThatNeedsCustomStyled text="1" />
         <ComponentThatNeedsCustomStyled text="2" />
         <ComponentThatNeedsCustomStyled text="3" />
