@@ -12,7 +12,7 @@ export function Purpose() {
         <p className="font-medium">Roughly 25% of the time before showing results is from render calculations</p>
         <p>^^Obviously it can't be 0ms, but it can definitely be improved! But How!</p>
         <br></br>
-        <p>The purpose of the React Profiler is to make it easier to decipher the performance profiler of your React application</p>
+        <p>The purpose of the React Profiler is to make it easier to decipher the performance of your React application</p>
       </div>
     );
   }
