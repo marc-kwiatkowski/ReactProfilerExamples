@@ -7,7 +7,8 @@ import {
 import { Landing, ContactMe, Install, Issue, Outline, 
   Profiler101, Purpose, Disclaimer, OptimizationPattern1, 
   MoreDisclaimer, OptimizationPattern1Solution, BeforeWeProceed, OptimizationPattern2,
-  OptimizationPattern2Solution, OptimizationPattern3, OptimizationPattern3Solution } from "./pages"
+  OptimizationPattern2Solution, OptimizationPattern3, OptimizationPattern3Solution,
+  OptimizationPattern4, OptimizationPattern4Solution } from "./pages"
 import "./index.css"
 
 const router = createBrowserRouter([
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
     element: <OptimizationPattern2 />,
   },
   {
+    path: "/optimizationPattern2Solution",
+    element: <OptimizationPattern2Solution />,
+  },
+  {
     path: "/optimizationPattern3",
     element: <OptimizationPattern3 />,
   },
@@ -68,8 +73,12 @@ const router = createBrowserRouter([
     element: <OptimizationPattern3Solution />,
   },
   {
-    path: "/optimizationPattern2Solution",
-    element: <OptimizationPattern2Solution />,
+    path: "/optimizationPattern4",
+    element: <OptimizationPattern4 />,
+  },
+  {
+    path: "/optimizationPattern4Solution",
+    element: <OptimizationPattern4Solution />,
   },
   {
     path: "/moreDisclaimer",
@@ -86,9 +95,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //avoiding page shift when scrollbar appear
 const paddingLeft = { paddingLeft: "calc(100vw - 100% + 20%)", paddingRight: "20%" }
 root.render(
-  <React.StrictMode>
-    <div className='pr-[20%] py-2' style={paddingLeft}>
-      <RouterProvider router={router} />
+  <div className='pr-[20%] py-2 overflow-auto' style={paddingLeft} id="scrollRoot">
+    <div className='overflow-hidden'>
+    <RouterProvider router={router} />
     </div>
-  </React.StrictMode>
+  </div>
 );

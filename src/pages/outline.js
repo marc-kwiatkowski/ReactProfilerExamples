@@ -11,7 +11,10 @@ export function Outline() {
         <SubHeader onClick={() => navigate("/install")}>Installation</SubHeader>
         <SubHeader onClick={() => navigate("/profiler101")}>React Profiler 101</SubHeader>
         <SubHeader onClick={() => navigate("/issue")}>Issue with this website</SubHeader>
-        <SubHeader onClick={() => navigate("/optimizationPattern1")}>Optimization Patterns</SubHeader>
+        <div className="flex items-center">
+          <SubHeader onClick={() => navigate("/optimizationPattern1")}>Optimization Patterns</SubHeader>          
+          <p>{`<- this is the meat of the site`}</p>
+        </div>
         <SubHeader onClick={() => navigate("/contactMe")}>Contact me</SubHeader>
       </div>
     );
