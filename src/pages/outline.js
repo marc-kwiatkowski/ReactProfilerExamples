@@ -15,8 +15,8 @@ export function Outline() {
           <SubHeader onClick={() => navigate("/optimizationPattern1")}>Optimization Patterns</SubHeader>          
           <p>{`<- this is the meat of the site`}</p>
         </div>
+        <SubHeader onClick={() => navigate("/toSummarize")}>Summarizing Patterns</SubHeader>
         <SubHeader onClick={() => navigate("/contactMe")}>Contact me</SubHeader>
       </div>
     );
   }
-  

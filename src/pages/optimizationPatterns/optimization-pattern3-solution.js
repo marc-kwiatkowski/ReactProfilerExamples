@@ -35,8 +35,12 @@ export function OptimizationPattern3Solution() {
         <ButtonHeader prevPage="/optimizationPattern3" nextPage="/optimizationPattern4" />
         <Header>Pattern 3 Solution</Header>
         <p>There are cases where objects make sense, but I've seen them misused a lot in production code.</p>
-        <p className="font-medium">If any attribute of that object changes, memo does a shallow check and will void anything that has it as a dependency.</p>
-        <p>In this case we could've passed the count value directly, but most commonly I'll see an issue similar to this where data is being spread around and causing unneeded rerenders</p>
+        <img className="w-full" src="dataRerender.png" alt="Data Rerender" />
+        <p>As you can see from above, the second button was rerendering from a state change that wasn't needed</p>
+
+        <p className="font-medium">If any attribute of that object changes, React.useMemo does a shallow check and will rerender anything that has it as a dependency.</p>
+        <p>In this case we could've passed the count value directly</p>
+        <p>Most commonly I'll see this issue when data is being spread around and causing unneeded rerenders</p>
         <div className="flex gap-4">
           <button className="bg-slate-100 hover:bg-slate-200" onClick={incrementCounter1}>Click me if Pink is cooler</button>
           {RenderCount1InACoolWayMemod}

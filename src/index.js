@@ -8,7 +8,7 @@ import { Landing, ContactMe, Install, Issue, Outline,
   Profiler101, Purpose, Disclaimer, OptimizationPattern1, 
   MoreDisclaimer, OptimizationPattern1Solution, BeforeWeProceed, OptimizationPattern2,
   OptimizationPattern2Solution, OptimizationPattern3, OptimizationPattern3Solution,
-  OptimizationPattern4, OptimizationPattern4Solution, OptimizationPattern5, OptimizationPattern6 } from "./pages"
+  OptimizationPattern4, OptimizationPattern4Solution, OptimizationPattern5, OptimizationPattern6, ToSummarize, InPractice, OtherThings } from "./pages"
 import "./index.css"
 
 const router = createBrowserRouter([
@@ -87,6 +87,18 @@ const router = createBrowserRouter([
   {
     path: "/optimizationPattern6",
     element: <OptimizationPattern6 />,
+  },
+  {
+    path: "/toSummarize",
+    element: <ToSummarize />,
+  },
+  {
+    path: "/otherThings",
+    element: <OtherThings />,
+  },
+  {
+    path: "/inPractice",
+    element: <InPractice />,
   },
   {
     path: "/moreDisclaimer",

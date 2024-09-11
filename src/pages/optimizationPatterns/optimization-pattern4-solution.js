@@ -15,7 +15,7 @@ const RenderWrapper = React.memo(RenderWrapper_)
 const DataToDisplay = new Array(150).fill(0);
 const options = {
     root: document.querySelector("#scrollRoot"),
-    rootMargin: "0px",
+    rootMargin: "100px", //will "prefetch" stuff just off the page
     threshold: 0,
   };
 
