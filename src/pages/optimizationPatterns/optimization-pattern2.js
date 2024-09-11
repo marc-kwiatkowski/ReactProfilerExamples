@@ -2,25 +2,25 @@ import React from "react"
 import { ButtonHeader, Header } from "../../components/"
 import { simulateCalculations } from "../../helpers"
 
-const SomeRandomSlowComponent = (props) => {
-    simulateCalculations(300)
-    return <p>I'm a static component! (profile me when you click the button)</p>
+const ComponentThatNeedsCustomStyled = (props) => {
+    const style = React.useMemo(() => {
+        //imagine a spread or map slowing this down
+        simulateCalculations(100)
+        return { backgroundColor: "red"}
+    }, [])
+    return <p style={style}>{`I'm component ${props?.text}`}</p>
 }
 
 export function OptimizationPattern2() {
-    const [counter, setCounter] = React.useState(0)
-    const onClick = () => {
-        setCounter(counter + 1)
-    }
-
     return (
       <div>
-        <ButtonHeader prevPage="/optimizationPattern1" nextPage="/optimizationPattern2Solution" />
+        <ButtonHeader prevPage="/moreDisclaimer" nextPage="/optimizationPattern2Solution" />
         <Header>Optimization Pattern 2</Header>
-        <p>This should be everyones first example of why to use useMemo and useCallback</p>
-        <button onClick={onClick} className="bg-red-500 size-20">Click me</button>
-        <p>{`counter: ${counter}`}</p>
-        <SomeRandomSlowComponent />
+        <p>Hint: Slow initial render</p>
+        <ComponentThatNeedsCustomStyled text="1" />
+        <ComponentThatNeedsCustomStyled text="2" />
+        <ComponentThatNeedsCustomStyled text="3" />
+        <ComponentThatNeedsCustomStyled text="4" />
       </div>
     );
 }

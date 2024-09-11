@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import { Landing, ContactMe, Install, Issue, Outline, 
   Profiler101, Purpose, Disclaimer, OptimizationPattern1, 
-  MoreDisclaimer, OptimizationPattern1Solution, BeforeWeProceed } from "./pages"
+  MoreDisclaimer, OptimizationPattern1Solution, BeforeWeProceed, OptimizationPattern2,
+  OptimizationPattern2Solution } from "./pages"
 import "./index.css"
 
 const router = createBrowserRouter([
@@ -54,10 +55,14 @@ const router = createBrowserRouter([
     path: "/moreDisclaimer",
     element: <MoreDisclaimer />,
   },
-  // {
-  //   path: "/optimizationPattern2Solution",
-  //   element: <OptimizationPattern2Solution />,
-  // },
+  {
+    path: "/optimizationPattern2",
+    element: <OptimizationPattern2 />,
+  },
+  {
+    path: "/optimizationPattern2Solution",
+    element: <OptimizationPattern2Solution />,
+  },
   {
     path: "/moreDisclaimer",
     element: <MoreDisclaimer />,

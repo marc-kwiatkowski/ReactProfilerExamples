@@ -2,7 +2,7 @@ import { ButtonHeader, Header } from "../components"
 export function MoreDisclaimer() {
     return (
       <div>
-        <ButtonHeader prevPage="/optimizationPattern2Solution" nextPage="/optimizationPattern2"/>
+        <ButtonHeader prevPage="/optimizationPattern1Solution" nextPage="/optimizationPattern2"/>
         <Header>More Disclaimer</Header>
         <p>So if you have react experience, you know a lot of the re-renders will be trivial and only cost 1-2ms</p>
         <p>The issue is when you're working on a large project, and there's dozens of components taking an extra 1-2ms, and you end up noticeably slowing the page down over time..</p>

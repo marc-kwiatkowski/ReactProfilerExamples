@@ -33,6 +33,10 @@ export function Profiler101() {
         <br></br>
         <p>The above example doesn't show it, but in the top right you'll notice "1/1".</p>
         <p>When you have more going on in the page, you'll have more "Render Cycles" and be able to navigate through all of them.</p>
+        <br></br>
+        <p><span className="font-medium">Note:</span></p>
+        <p>You can't profile a production app on purpose as it would slow performance. Profiling is reserved for dev builds, and you could enable them for production with extra work</p>
+        <p>I recommend just profiling against dev builds, render perforance may not be 1 to 1, but will scale accordingly</p>
       </div>
     );
   }
