@@ -2,7 +2,7 @@ import { ButtonHeader, Header } from "../components"
 export function Issue() {
     return (
       <div>
-        <ButtonHeader prevPage="/profiler101" nextPage="/optimizationPattern1"/>
+        <ButtonHeader prevPage="/profiler101" nextPage="/beforeWeProceed"/>
         <Header>Issue</Header>
         <p>Its important for you to be able to profile your app, but understanding how to optimize is the main difficulty!</p>
         <p>I'm going to try and give some examples of what I've learned over the years..</p>

@@ -4,7 +4,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { Landing, ContactMe, Install, Issue, Outline, Profiler101, Purpose, Disclaimer, OptimizationPattern1 } from "./pages"
+import { Landing, ContactMe, Install, Issue, Outline, 
+  Profiler101, Purpose, Disclaimer, OptimizationPattern1, 
+  MoreDisclaimer, OptimizationPattern1Solution, BeforeWeProceed } from "./pages"
 import "./index.css"
 
 const router = createBrowserRouter([
@@ -37,8 +39,28 @@ const router = createBrowserRouter([
     element: <Issue />,
   },
   {
+    path: "/beforeWeProceed",
+    element: <BeforeWeProceed />,
+  },
+  {
     path: "/optimizationPattern1",
     element: <OptimizationPattern1 />,
+  },
+  {
+    path: "/optimizationPattern1Solution",
+    element: <OptimizationPattern1Solution />,
+  },
+  {
+    path: "/moreDisclaimer",
+    element: <MoreDisclaimer />,
+  },
+  // {
+  //   path: "/optimizationPattern2Solution",
+  //   element: <OptimizationPattern2Solution />,
+  // },
+  {
+    path: "/moreDisclaimer",
+    element: <MoreDisclaimer />,
   },
   {
     path: "/contactMe",
