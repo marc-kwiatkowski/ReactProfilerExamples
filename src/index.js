@@ -1,18 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider,
-  // useNavigate,
-  // useLocation,
 } from "react-router-dom";
-import { Landing, ContactMe, Install, Issue, Outline, Profiler101, Purpose } from "./pages"
+import { Landing, ContactMe, Install, Issue, Outline, Profiler101, Purpose, Disclaimer } from "./pages"
 import "./index.css"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Landing />,
+  },
+  {
+    path: "/disclaimer",
+    element: <Disclaimer />,
   },
   {
     path: "/outline",
@@ -35,7 +37,7 @@ const router = createBrowserRouter([
     element: <Issue />,
   },
   {
-    path: "/patternsToBeOptimized",
+    path: "/optimizationPatterns",
     element: <div>so much todo</div>,
   },
   {
@@ -45,15 +47,11 @@ const router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// const navigate = useNavigate();
-// const location = useLocation();
-// console.log(location)
-// const goToPage = (path) => {
-//   navigate(path);
-// };
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <div className='px-[20%] py-2'>
+      <RouterProvider router={router} />
+    </div>
   </React.StrictMode>
 );
