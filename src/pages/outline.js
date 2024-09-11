@@ -3,7 +3,8 @@ export function Outline() {
     return (
       <div>
         <ButtonHeader prevPage={"/disclaimer"} nextPage={"/purpose"}/>
-        <Header >Outline</Header>
+        Marc make these links!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        <Header>Outline</Header>
         <SubHeader>Purpose</SubHeader>
         <SubHeader>Installation</SubHeader>
         <SubHeader>React Profiler 101</SubHeader>

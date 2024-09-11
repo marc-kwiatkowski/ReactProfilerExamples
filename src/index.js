@@ -48,9 +48,11 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+//avoiding page shift when scrollbar appear
+const paddingLeft = { paddingLeft: "calc(100vw - 100% + 20%)", paddingRight: "20%" }
 root.render(
   <React.StrictMode>
-    <div className='px-[20%] py-2'>
+    <div className='pr-[20%] py-2' style={paddingLeft}>
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>
