@@ -4,7 +4,7 @@ import { simulateCalculations } from "../../helpers"
 
 const UnderlyingRenderComponent = (props) => {
   simulateCalculations(5)
-  return <p>{`some hypothetical component displaying a lot of results: ${props?.text}`}</p>
+  return <p>{`hypothetical children: ${props?.text}`}</p>
 }
 function RenderWrapper_(props) {
   return <div className="h-10 findMe" id={props?.keyPassThrough}>

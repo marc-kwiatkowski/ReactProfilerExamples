@@ -113,11 +113,11 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //avoiding page shift when scrollbar appear
-const paddingLeft = { paddingLeft: "calc(100vw - 100% + 20%)", paddingRight: "20%" }
+const paddingLeft = { paddingLeft: "calc(100vw - 80%)" }
 root.render(
-  <div className='pr-[20%] py-2 overflow-auto' style={paddingLeft} id="scrollRoot">
+  <div className='pr-[20%] py-2 overflow-x-hidden' style={paddingLeft} id="scrollRoot">
     <div className='overflow-hidden'>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </div>
   </div>
 );

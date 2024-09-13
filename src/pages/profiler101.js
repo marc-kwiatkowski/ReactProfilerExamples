@@ -4,7 +4,7 @@ export function Profiler101() {
       <div>
         <ButtonHeader prevPage="/install" nextPage="/issue"/>
         <Header>React Profiler 101</Header>
-        <p>For your reference, here is an old <Link href="https://legacy.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html" text="React blog on the React Profiler" /></p>
+        <p>For your reference, here is an old <Link url="https://legacy.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html" text="React blog on the React Profiler" /></p>
         <p>After installing the React Dev Tools, the "React Components" and "React Profiler" will show in your dev tools.</p>
         <p>Please, click around and get a feel for things yourself!</p>
         <p>I <span className="font-semibold">Strongly</span> recommend enabling the following option:</p>

@@ -38,6 +38,8 @@ export function OptimizationPattern1Solution() {
         <img className="w-full" src="profilerChildHover.png" alt="Profiler Child Hover" />
         <p>Basically what I said before, that it is rerendering due to a parent rerender</p>
         <br></br>
+        <p>Also I'd recommend having the "jsx-no-new-object-as-prop eslint" and "jsx-no-new-function-as-prop" rules turned on for warning about unnecessary object creation with every render</p>
+        <br></br>
         <br></br>
         <SubHeader>Notice how quickly the counter responds onClick now</SubHeader>
         <button onClick={onClick} className="bg-red-500 size-20">Click me</button>
